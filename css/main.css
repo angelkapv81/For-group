@@ -1,62 +1,44 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
-ul,
-p,
-h2 {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
-}
-
-.customer {
+.container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
+  padding-bottom: 59px;
   background-image: url(../images/background/background_mobile1x.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .customer {
+  .container {
     background-image: url(../images/background/background_mobile2x.png);
   }
 }
-@media screen and (min-width: 769px) {
-  .customer {
+@media screen and (min-width: 481px) {
+  .container {
     background-image: url(../images/background/background_tablet1x.png);
+    padding-bottom: 216px;
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
-  .customer {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .container {
     background-image: url(../images/background/background_tablet2x.png);
   }
 }
-@media screen and (min-width: 1200px) {
-  .customer {
+@media screen and (min-width: 769px) {
+  .container {
     background-image: url(../images/background/background_desktop1x.png);
+    padding-bottom: 128px;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .customer {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .container {
     background-image: url(../images/background/background_desktop2x.png);
   }
 }
 
+.customers__list {
+  margin-top: 80px;
+}
 .customers__item {
   text-align: center;
 }
@@ -132,23 +114,65 @@ h2 {
   }
 }
 
-.title_img {
+.gallery_list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-img {
+  display: block;
+}
+.title-img_item {
+  max-width: 100%;
   width: 280px;
   height: 130px;
   border-radius: 8px;
-  margin-bottom: 80px;
+  -webkit-transform: translateY(-32px);
+          transform: translateY(-32px);
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .title_img {
+  .title-img_item {
     width: 704px;
     height: 327px;
     border-radius: 18px;
+    -webkit-transform: translateY(-144px);
+            transform: translateY(-144px);
   }
 }
 @media screen and (min-width: 1200px) {
-  .title_img {
+  .title-img_item {
     width: 1013px;
     height: 422px;
     border-radius: 24px;
+    -webkit-transform: translateY(-98px);
+            transform: translateY(-98px);
   }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+p,
+h2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+
+
+             
+
+
+      <!-- слайдер -->
+      <section class="customer" data-slider="customers-slider">
+        <div class="container">
+
+          <img
+          srcset="
+./images/ice/icecream_mobile1x.jpg 280w,
+./images/ice/icecream_tablet1x.jpg 704w,
+./images/ice/icecream_mobile2x.jpg 560w,
+./images/ice/icecream_tablet2x.jpg 1408w,
+./images/ice/icecream_desktop1x.jpg 1013w,
+./images/ice/icecream_desktop2x.jpg 2026w"
+
+        
+          sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 280px"
+          src="./images/ice/icecream_desktop1x.jpg"
+          alt="морозиво"
+                   loading="lazy"
+          class="title_img"
+        />
+
+          <h2 class="visually-hidden">Response</h2>
+          <div class="swiper customers__slider">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide customers__item">
+                <img 
+
+                srcset="
+                ./images/customer/emyli1-1x.jpg,
+                ./images/customer/emyli1-2x.jpg"
+               src="./images/customer/emyli1-1x.jpg"
+                alt="Emily"
+                width="85"
+                height="85"
+                loading="lazy"
+                class="customers__img"
+              />
+<!-- 
+              <img
+              srcset="
+                ./images/team/demyanenko1/demyanenko1_270.jpg 270w,
+                ./images/team/demyanenko1/demyanenko1_354.jpg 354w,
+                ./images/team/demyanenko1/demyanenko1_450.jpg 450w,
+                ./images/team/demyanenko1/demyanenko1_540.jpg 540w,
+                ./images/team/demyanenko1/demyanenko1_708.jpg 708w,
+                ./images/team/demyanenko1/demyanenko1_900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+              src="./images/team/demyanenko1/demyanenko1_450.jpg"
+              alt="Ігор Дем'яненко"
+              width="450"
+              height="460"
+              loading="lazy"
+            /> -->
+
+
+
+                
+                  <p class="customers__response">
+                    I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                  </p>
+               
+                  <p class="customers__name">
+                    Emily, Los Angeles                  
+                  </p>
+                
+              </li>
+              <li class="swiper-slide customers__item">
+                <img
+
+                srcset="
+                ./images/customer/bryan2-1x.jpg,
+                ./images/customer/bryan2-2x.jpg"
+
+                  src="./images/customer/bryan2-1x.jpg"
+                  alt="customers member"
+                  width="85"
+                height="85"
+                  class="customers__img"
+                />
+                
+                  <p class="customers__response">
+                    Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!
+                  </p>
+                
+                  <p class="customers__name">
+                    Bryan, New-York                 
+                  </p>
+                
+              </li>
+              <li class="swiper-slide customers__item">
+                <img
+
+                srcset="
+                ./images/customer/diana3-1x.jpg,
+                ./images/customer/diana3-2x.jpg"
+
+                  src="./images/customer/diana3-1x.jpg"
+                  alt="customers member"
+                  class="customers__img"
+                />
+               
+                  <p class="customers__response">
+                    Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!
+                  </p>
+               
+                  <p class="customers__name">
+                    Diana, Chicago                 
+                  </p>
+               
+              </li>
+            </ul>
+            <ul class="swiper-pagination customers__pagination"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>

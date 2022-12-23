@@ -1,0 +1,18 @@
+.title_img {
+  width: 280px;
+  height: 130px;
+  border-radius: 8px;
+  margin-bottom: 80px;
+
+  @include dq(only-tablet) {
+    width: 704px;
+    height: 327px;
+    border-radius: 18px;
+  }
+
+  @include dq(desktop) {
+    width: 1013px;
+    height: 422px;
+    border-radius: 24px;
+  }
+}
